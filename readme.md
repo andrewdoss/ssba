@@ -6,8 +6,14 @@ The goal of this repository to stash code snippets from various exercises and wr
 
 ## Contents
 
-### /week1
+### /class1
 
-Week 1 is an intro focused on exploring aspects of the fetch-decode-execute model of computation, registers, and memory access/caching. 
+Class 1 is an intro focused on exploring aspects of the fetch-decode-execute model of computation, registers, and memory access/caching. 
 
-(In Progress)
+### /class2
+
+Class 2 is an overview of binary encodings of data and the tradeoffs and limitations involved in representing integers, real numbers, characters, and more in binary.
+
+### /class3
+
+Class 3 is focused on "programming the actual computer" with some simple exercises in x86 assembly programming. The goal here is not so much to learn to write real programs in assembly but rather to get an introduction to x86 assembly that enables future exploration of compiler outputs using a disassembler. 
