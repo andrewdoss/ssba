@@ -97,4 +97,9 @@ At this point, I wrote a basic program to parse the capture config and got the c
 
 ### Parsing the Ethernet Headers
 
-TODO: Ran out of time for this exercise but the basic pattern used to parse the packets from the capture will apply as the messages are successively unwrapped at higher protocol layers.
+- ether type is always ipV4
+- the mac addresses are:
+    - 164.94.96.223.46.27
+    - 196.233.132.135.96.40
+
+I ran out of time but I see how I could continue to parse headers and payloads all the way up to the HTTP layer and extract the image data from there. I'd like to circle back on this when I have more time.

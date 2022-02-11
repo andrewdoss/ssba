@@ -97,7 +97,11 @@ func (p *CaptureParser) ParsePacketHeader() (uint32, error) {
 
 // ParsePacket consumes one packet of the specified length
 func (p *CaptureParser) ParsePacket(pLength uint32) error {
-	_, err := p.readNBytes(int(pLength))
+	buf, err := p.readNBytes(int(pLength))
+	destMAC := buf[:6]
+	srcMAC := buf[6:12]
+	etherType := buf[12:14]
+	log.Printf("destMac: %v, srcMac: %v, etherType: %v", destMAC, srcMAC, etherType)
 	return err
 }
 
