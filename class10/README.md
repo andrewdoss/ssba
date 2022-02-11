@@ -93,6 +93,8 @@ This appears to show that the next packet is 0x4e or 4*16 + 14 = 78 bytes long. 
 xxd -l 118 -c 4 < net.cap | tail -4
 ```
 
-At this point, I wrote a basic program to parse the capture config and the number of packets.
+At this point, I wrote a basic program to parse the capture config and got the correct number of packets (99).
 
 ### Parsing the Ethernet Headers
+
+TODO: Ran out of time for this exercise but the basic pattern used to parse the packets from the capture will apply as the messages are successively unwrapped at higher protocol layers.
